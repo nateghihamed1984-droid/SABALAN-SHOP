@@ -1,0 +1,417 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    direction: rtl;
+    font-family: Tahoma, Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #222;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.header-container {
+    width: 92%;
+    max-width: 1250px;
+    margin: 0 auto;
+    min-height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    text-align: right;
+    min-width: 230px;
+}
+
+.logo h1 {
+    color: #1565c0;
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+.logo p {
+    color: #777;
+    font-size: 13px;
+}
+
+.main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex: 1;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.main-menu a:hover {
+    color: #1565c0;
+}
+
+.cart button {
+    border: none;
+    background: #1565c0;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.cart span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 22px;
+    height: 22px;
+
+    margin-right: 5px;
+
+    background: white;
+    color: #1565c0;
+
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   Hero
+========================= */
+
+.hero {
+    width: 92%;
+    max-width: 1250px;
+
+    min-height: 200px;
+
+    margin: 25px auto;
+
+    border-radius: 18px;
+
+    background: linear-gradient(
+        135deg,
+        #e3f2fd,
+        #ffffff
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.05);
+}
+
+.hero-content {
+    max-width: 700px;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 28px;
+    color: #1565c0;
+    margin-bottom: 8px;
+}
+
+.hero-content p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 18px;
+}
+
+.hero-button {
+    border: none;
+    background: #1565c0;
+    color: white;
+
+    padding: 10px 24px;
+
+    border-radius: 9px;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.hero-button:hover {
+    background: #0d47a1;
+}
+
+
+/* =========================
+   Trust Section
+========================= */
+
+.trust-section {
+    width: 92%;
+    max-width: 1250px;
+    margin: 35px auto;
+}
+
+.trust-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.trust-title h2 {
+    font-size: 26px;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.trust-title p {
+    color: #777;
+    font-size: 14px;
+}
+
+.trust-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 18px;
+}
+
+.trust-card {
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    padding: 22px 18px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.trust-icon {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.trust-card h3 {
+    font-size: 17px;
+    color: #1565c0;
+    margin-bottom: 7px;
+}
+
+.trust-card p {
+    color: #666;
+    font-size: 13px;
+}
+
+.trust-card a {
+    display: inline-block;
+    margin-top: 8px;
+    color: #1565c0;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.free-delivery {
+    margin-top: 20px;
+
+    background: #e8f5e9;
+
+    border: 1px solid #c8e6c9;
+
+    color: #2e7d32;
+
+    border-radius: 10px;
+
+    padding: 11px;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   Categories
+========================= */
+
+.categories-section {
+    width: 92%;
+    max-width: 1250px;
+    margin: 45px auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.section-title p {
+    color: #777;
+    font-size: 15px;
+}
+
+.categories-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 22px;
+}
+
+.category-card {
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 18px;
+
+    padding: 25px 20px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.category-icon {
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+.category-card h3 {
+    font-size: 19px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.category-tabs a {
+    text-decoration: none;
+
+    background: #e3f2fd;
+
+    color: #1565c0;
+
+    padding: 5px 10px;
+
+    border-radius: 7px;
+
+    font-size: 12px;
+}
+
+.category-tabs a:hover {
+    background: #1565c0;
+    color: white;
+}
+
+.future-category {
+    background: #fafafa;
+}
+
+.future-category p {
+    color: #777;
+    font-size: 13px;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+.site-footer {
+    margin-top: 50px;
+
+    background: #ffffff;
+
+    border-top: 1px solid #e5e7eb;
+
+    text-align: center;
+
+    padding: 25px;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 850px) {
+
+    .header-container {
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 15px;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .main-menu {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 180px;
+    }
+
+    .hero-content h2 {
+        font-size: 24px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .trust-section,
+    .categories-section {
+        width: 94%;
+    }
+}
