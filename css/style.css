@@ -1,48 +1,60 @@
+/* =========================================================
+   SABALAN SHOP
+   Main Stylesheet
+   ========================================================= */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
 
-
 body {
     direction: rtl;
     font-family: Tahoma, Arial, sans-serif;
-    background-color: #f5f7fa;
-    color: #222;
+    background: #f8fafc;
+    color: #1f2937;
     line-height: 1.8;
 }
 
-
-/* =========================
-   Header
-========================= */
-
-.site-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-
-    background: rgba(255, 255, 255, 0.97);
-
-    border-bottom: 1px solid #e5e7eb;
-
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+img {
+    max-width: 100%;
 }
 
 
-.header-container {
-    width: 92%;
-    max-width: 1250px;
+/* =========================================================
+   CONTAINER
+   ========================================================= */
 
-    min-height: 90px;
-
+.sabalan-container {
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.sabalan-header {
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.sabalan-header-inner {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 90px;
+    margin: 0 auto;
+    padding: 10px 20px;
 
     display: flex;
     align-items: center;
@@ -52,927 +64,751 @@ body {
 }
 
 
-.logo {
-    display: flex;
-    align-items: center;
+/* لوگو */
 
+.sabalan-logo-area {
+    width: 180px;
     min-width: 180px;
 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sabalan-logo-area a {
+    display: block;
     text-decoration: none;
 }
 
+.sabalan-header-logo {
+    width: 150px !important;
+    max-width: 150px !important;
+    height: auto !important;
+    max-height: 75px !important;
 
-.logo img {
-    width: 150px;
-    max-width: 100%;
-    height: auto;
-
-    display: block;
+    display: block !important;
+    object-fit: contain !important;
 }
 
 
-.main-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* منو */
 
-    gap: 24px;
-
+.sabalan-menu {
     flex: 1;
-}
-
-
-.main-menu a {
-    position: relative;
-
-    text-decoration: none;
-
-    color: #333;
-
-    font-size: 14px;
-    font-weight: bold;
-
-    padding: 8px 2px;
-
-    transition: 0.25s;
-}
-
-
-.main-menu a::after {
-    content: "";
-
-    position: absolute;
-
-    right: 0;
-    bottom: 0;
-
-    width: 0;
-    height: 2px;
-
-    background: #1565c0;
-
-    transition: 0.25s;
-}
-
-
-.main-menu a:hover {
-    color: #1565c0;
-}
-
-
-.main-menu a:hover::after {
-    width: 100%;
-}
-
-
-/* =========================
-   Cart
-========================= */
-
-.cart button {
-    border: none;
-
-    background: #1565c0;
-
-    color: #ffffff;
-
-    padding: 11px 17px;
-
-    border-radius: 10px;
-
-    cursor: pointer;
-
-    font-family: inherit;
-
-    font-size: 13px;
-    font-weight: bold;
-
-    transition: 0.25s;
-}
-
-
-.cart button:hover {
-    background: #0d47a1;
-
-    transform: translateY(-1px);
-}
-
-
-.cart span {
-    display: inline-flex;
-
-    align-items: center;
-    justify-content: center;
-
-    width: 22px;
-    height: 22px;
-
-    margin-right: 5px;
-
-    background: #ffffff;
-
-    color: #1565c0;
-
-    border-radius: 50%;
-
-    font-size: 12px;
-    font-weight: bold;
-}
-
-
-/* =========================
-   Hero
-========================= */
-
-.hero {
-    width: 92%;
-    max-width: 1250px;
-
-    min-height: 340px;
-
-    margin: 28px auto;
-
-    border-radius: 22px;
-
-    background:
-        radial-gradient(
-            circle at 15% 20%,
-            rgba(21, 101, 192, 0.10),
-            transparent 35%
-        ),
-        linear-gradient(
-            135deg,
-            #e3f2fd,
-            #ffffff
-        );
 
     display: flex;
-
     align-items: center;
     justify-content: center;
-
-    text-align: center;
-
-    box-shadow:
-        0 8px 30px rgba(0, 0, 0, 0.06);
-
-    overflow: hidden;
-}
-
-
-.hero-content {
-    max-width: 760px;
-
-    padding: 35px 20px;
-}
-
-
-.hero-badge {
-    display: inline-block;
-
-    background: #ffffff;
-
-    color: #1565c0;
-
-    border: 1px solid #d7e9f8;
-
-    border-radius: 30px;
-
-    padding: 6px 15px;
-
-    margin-bottom: 15px;
-
-    font-size: 13px;
-    font-weight: bold;
-
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-}
-
-
-.hero-content h1 {
-    font-size: 38px;
-
-    color: #1565c0;
-
-    margin-bottom: 5px;
-}
-
-
-.hero-content p {
-    font-size: 20px;
-
-    color: #444;
-
-    margin-bottom: 5px;
-}
-
-
-.hero-description {
-    display: block;
-
-    color: #777;
-
-    font-size: 14px;
-
-    margin-bottom: 22px;
-}
-
-
-.hero-button {
-    display: inline-block;
-
-    text-decoration: none;
-
-    border: none;
-
-    background: #1565c0;
-
-    color: #ffffff;
-
-    padding: 11px 30px;
-
-    border-radius: 10px;
-
-    font-family: inherit;
-
-    font-size: 14px;
-    font-weight: bold;
-
-    cursor: pointer;
-
-    transition: 0.25s;
-}
-
-
-.hero-button:hover {
-    background: #0d47a1;
-
-    transform: translateY(-2px);
-
-    box-shadow: 0 6px 15px rgba(21, 101, 192, 0.20);
-}
-
-
-/* =========================
-   Section Badge
-========================= */
-
-.section-badge {
-    display: inline-block;
-
-    background: #e3f2fd;
-
-    color: #1565c0;
-
-    border-radius: 20px;
-
-    padding: 4px 12px;
-
-    margin-bottom: 8px;
-
-    font-size: 12px;
-    font-weight: bold;
-}
-
-
-/* =========================
-   Trust Section
-========================= */
-
-.trust-section {
-    width: 92%;
-    max-width: 1250px;
-
-    margin: 55px auto;
-}
-
-
-.trust-title {
-    text-align: center;
-
-    margin-bottom: 28px;
-}
-
-
-.trust-title h2 {
-    font-size: 27px;
-
-    color: #222;
-
-    margin-bottom: 5px;
-}
-
-
-.trust-title p {
-    color: #777;
-
-    font-size: 14px;
-}
-
-
-.trust-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(auto-fit, minmax(220px, 1fr));
-
-    gap: 18px;
-}
-
-
-.trust-card {
-    background: #ffffff;
-
-    border: 1px solid #e5e7eb;
-
-    border-radius: 15px;
-
-    padding: 24px 18px;
-
-    text-align: center;
-
-    box-shadow:
-        0 5px 18px rgba(0, 0, 0, 0.045);
-
-    transition: 0.25s;
-}
-
-
-.trust-card:hover {
-    transform: translateY(-4px);
-
-    box-shadow:
-        0 10px 25px rgba(0, 0, 0, 0.08);
-}
-
-
-.trust-icon {
-    font-size: 32px;
-
-    margin-bottom: 8px;
-}
-
-
-.trust-card h3 {
-    font-size: 17px;
-
-    color: #1565c0;
-
-    margin-bottom: 7px;
-}
-
-
-.trust-card p {
-    color: #666;
-
-    font-size: 13px;
-}
-
-
-.trust-card a {
-    display: inline-block;
-
-    margin-top: 9px;
-
-    color: #1565c0;
-
-    text-decoration: none;
-
-    font-size: 12px;
-    font-weight: bold;
-}
-
-
-.trust-card a:hover {
-    text-decoration: underline;
-}
-
-
-/* =========================
-   Delivery Box
-========================= */
-
-.delivery-box {
-    margin-top: 22px;
-
-    background: #ffffff;
-
-    border: 1px solid #d9e7f4;
-
-    border-radius: 15px;
-
-    padding: 18px 22px;
-
-    box-shadow:
-        0 5px 18px rgba(0, 0, 0, 0.04);
-}
-
-
-.delivery-title {
-    color: #1565c0;
-
-    font-size: 16px;
-    font-weight: bold;
-
-    margin-bottom: 10px;
-
-    text-align: center;
-}
-
-
-.delivery-line {
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 8px;
-
-    padding: 7px;
-
-    border-radius: 8px;
-
-    font-size: 14px;
-
-    text-align: center;
-}
-
-
-.delivery-city {
-    background: #e8f5e9;
-
-    color: #2e7d32;
-}
-
-
-.delivery-national {
-    margin-top: 7px;
-
-    background: #fff8e1;
-
-    color: #8a6200;
-}
-
-
-/* =========================
-   Categories
-========================= */
-
-.categories-section {
-    width: 92%;
-    max-width: 1250px;
-
-    margin: 65px auto;
-}
-
-
-.section-title {
-    text-align: center;
-
-    margin-bottom: 30px;
-}
-
-
-.section-title h2 {
-    font-size: 30px;
-
-    color: #222;
-
-    margin-bottom: 5px;
-}
-
-
-.section-title p {
-    color: #777;
-
-    font-size: 15px;
-}
-
-
-.categories-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(auto-fit, minmax(220px, 1fr));
 
     gap: 22px;
+    flex-wrap: wrap;
+}
+
+.sabalan-menu a {
+    color: #1f2937;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+
+    transition: 0.2s ease;
+}
+
+.sabalan-menu a:hover {
+    color: #087f5b;
 }
 
 
-.category-card {
+/* سبد */
+
+.sabalan-cart {
+    width: 150px;
+    min-width: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.sabalan-cart a {
+    display: inline-block;
+
+    background: #087f5b;
+    color: #ffffff;
+
+    text-decoration: none;
+    font-weight: 700;
+
+    padding: 10px 17px;
+    border-radius: 10px;
+
+    transition: 0.2s ease;
+}
+
+.sabalan-cart a:hover {
+    background: #066b4d;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.sabalan-hero {
+    background: linear-gradient(
+        135deg,
+        #e8f7f1,
+        #eef7ff
+    );
+
+    padding: 85px 0;
+
+    text-align: center;
+}
+
+.sabalan-hero h1 {
+    font-size: 42px;
+    color: #087f5b;
+    margin-bottom: 12px;
+}
+
+.sabalan-hero p {
+    font-size: 18px;
+    color: #475569;
+}
+
+.sabalan-hero .sabalan-slogan {
+    font-size: 25px;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.sabalan-main-button {
+    display: inline-block;
+
+    margin-top: 28px;
+
+    padding: 13px 30px;
+
+    border-radius: 12px;
+
+    background: #087f5b;
+    color: #ffffff;
+
+    text-decoration: none;
+    font-weight: 800;
+
+    transition: 0.2s ease;
+}
+
+.sabalan-main-button:hover {
+    background: #066b4d;
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+   ========================================================= */
+
+.sabalan-section {
+    padding: 65px 0;
+}
+
+.sabalan-section h2,
+.sabalan-info-section h2,
+.sabalan-conditions h2 {
+    text-align: center;
+
+    font-size: 28px;
+
+    margin-bottom: 30px;
+
+    color: #111827;
+}
+
+
+/* =========================================================
+   TRUST CARDS
+   ========================================================= */
+
+.sabalan-trust-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+.sabalan-trust-card {
     background: #ffffff;
 
+    padding: 28px 20px;
+
     border: 1px solid #e5e7eb;
-
-    border-radius: 18px;
-
-    padding: 27px 20px;
+    border-radius: 16px;
 
     text-align: center;
 
-    box-shadow:
-        0 5px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+}
 
-    transition: 0.25s;
+.sabalan-icon {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.sabalan-trust-card h3 {
+    margin-bottom: 10px;
+    color: #087f5b;
+}
+
+.sabalan-trust-card p {
+    color: #64748b;
 }
 
 
-.category-card:hover {
-    transform: translateY(-5px);
+/* =========================================================
+   DELIVERY
+   ========================================================= */
 
-    box-shadow:
-        0 12px 28px rgba(0, 0, 0, 0.09);
+.sabalan-delivery {
+    padding: 55px 0;
+
+    background: #ecfdf5;
+
+    text-align: center;
+}
+
+.sabalan-delivery h2 {
+    margin-bottom: 20px;
+    color: #065f46;
+}
+
+.sabalan-delivery p {
+    margin: 7px 0;
+    color: #374151;
 }
 
 
-.category-icon {
-    font-size: 43px;
+/* =========================================================
+   CATEGORIES
+   ========================================================= */
 
-    margin-bottom: 8px;
+.sabalan-category-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 20px;
 }
 
-
-.category-card h3 {
-    font-size: 19px;
-
-    color: #222;
-
-    margin-bottom: 15px;
-}
-
-
-.category-tabs {
-    display: flex;
-
-    justify-content: center;
-
-    flex-wrap: wrap;
-
-    gap: 7px;
-}
-
-
-.category-tabs a {
-    text-decoration: none;
-
-    background: #e3f2fd;
-
-    color: #1565c0;
-
-    padding: 5px 10px;
-
-    border-radius: 7px;
-
-    font-size: 12px;
-
-    transition: 0.2s;
-}
-
-
-.category-tabs a:hover {
-    background: #1565c0;
-
-    color: #ffffff;
-}
-
-
-.future-category {
-    background: #fafafa;
-}
-
-
-.future-category p {
-    color: #777;
-
-    font-size: 13px;
-}
-
-
-/* =========================
-   Tracking
-========================= */
-
-.tracking-section {
-    width: 92%;
-    max-width: 1250px;
-
-    margin: 60px auto;
-}
-
-
-.tracking-content {
-    background: #ffffff;
-
-    border: 1px solid #e5e7eb;
-
-    border-radius: 18px;
+.sabalan-category-card {
+    min-height: 150px;
 
     padding: 25px;
 
-    display: flex;
-
-    align-items: center;
-
-    gap: 18px;
-
-    box-shadow:
-        0 5px 20px rgba(0, 0, 0, 0.045);
-}
-
-
-.tracking-icon {
-    font-size: 38px;
-
-    min-width: 55px;
-
-    text-align: center;
-}
-
-
-.tracking-content h2 {
-    color: #1565c0;
-
-    font-size: 20px;
-
-    margin-bottom: 3px;
-}
-
-
-.tracking-content p {
-    color: #777;
-
-    font-size: 13px;
-}
-
-
-.secondary-button {
-    margin-right: auto;
-
-    border: 1px solid #1565c0;
-
     background: #ffffff;
 
-    color: #1565c0;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
 
-    padding: 9px 18px;
+    text-decoration: none;
+    color: #1f2937;
 
-    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
 
-    font-family: inherit;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    font-size: 40px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.04);
+
+    transition: 0.2s ease;
+}
+
+.sabalan-category-card:hover {
+    transform: translateY(-4px);
+    border-color: #087f5b;
+}
+
+.sabalan-category-card strong {
+    display: block;
+
+    margin-top: 8px;
+
+    font-size: 18px;
+
+    color: #087f5b;
+}
+
+.sabalan-category-card span {
+    display: block;
+
+    margin-top: 3px;
 
     font-size: 13px;
-    font-weight: bold;
 
-    cursor: pointer;
-
-    white-space: nowrap;
-
-    transition: 0.25s;
+    color: #64748b;
 }
 
 
-.secondary-button:hover {
-    background: #1565c0;
+/* =========================================================
+   INFO SECTIONS
+   ========================================================= */
 
-    color: #ffffff;
-}
-
-
-/* =========================
-   Contact
-========================= */
-
-.contact-section {
-    width: 92%;
-    max-width: 1250px;
-
-    margin: 60px auto 70px;
-}
-
-
-/* =========================
-   Footer
-========================= */
-
-.site-footer {
-    margin-top: 50px;
+.sabalan-info-section {
+    padding: 55px 0;
 
     background: #ffffff;
 
     border-top: 1px solid #e5e7eb;
-
-    color: #777;
 }
 
-
-.footer-content {
-    width: 92%;
-    max-width: 1250px;
+.sabalan-info-section p,
+.sabalan-info-section ul {
+    max-width: 900px;
 
     margin: 0 auto;
 
-    padding: 30px 0;
+    color: #475569;
+
+    line-height: 2;
+}
+
+.sabalan-info-section ul {
+    padding-right: 25px;
+}
+
+
+/* =========================================================
+   PRODUCTS PAGE TITLE
+   ========================================================= */
+
+.sabalan-page-title {
+    background: linear-gradient(
+        135deg,
+        #e8f7f1,
+        #eef7ff
+    );
+
+    padding: 55px 0;
+
+    text-align: center;
+}
+
+.sabalan-page-title h1 {
+    font-size: 36px;
+    color: #087f5b;
+
+    margin-bottom: 8px;
+}
+
+.sabalan-page-title p {
+    color: #64748b;
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   PRODUCTS GRID
+   ========================================================= */
+
+.sabalan-products-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 24px;
+
+    margin-top: 10px;
+}
+
+
+/* =========================================================
+   PRODUCT CARD
+   ========================================================= */
+
+.sabalan-product-card {
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+
+    text-align: right;
 
     display: flex;
+    flex-direction: column;
 
+    transition: 0.2s ease;
+}
+
+.sabalan-product-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.09);
+}
+
+
+/* عکس */
+
+.sabalan-product-image {
+    width: 100%;
+    height: 220px;
+
+    background: #f1f5f9;
+
+    display: flex;
     align-items: center;
+    justify-content: center;
 
-    justify-content: space-between;
-
-    gap: 30px;
+    font-size: 65px;
 }
 
 
-.footer-brand img {
-    width: 120px;
+/* محتوای کارت */
 
-    height: auto;
+.sabalan-product-content {
+    width: 100%;
 
-    display: block;
+    padding: 20px;
+}
 
-    margin-bottom: 5px;
+.sabalan-product-code {
+    color: #64748b;
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+}
+
+.sabalan-product-category {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    background: #e6f4ef;
+
+    color: #087f5b;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    margin-bottom: 12px;
+}
+
+.sabalan-product-title {
+    color: #111827;
+
+    font-size: 19px;
+
+    margin-bottom: 10px;
+}
+
+.sabalan-product-description {
+    min-height: 55px;
+
+    color: #4b5563;
+
+    line-height: 1.9;
+}
+
+.sabalan-product-price {
+    color: #087f5b;
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+    margin: 15px 0;
+}
+
+.sabalan-product-orders {
+    color: #475569;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+.sabalan-product-popular {
+    color: #d97706;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    margin-top: 4px;
+}
+
+.sabalan-product-rating {
+    margin: 12px 0;
+
+    color: #b45309;
+
+    font-weight: 700;
+}
+
+.sabalan-product-rating span {
+    color: #64748b;
+
+    font-weight: normal;
 }
 
 
-.footer-brand p {
-    font-size: 12px;
-}
+/* جزئیات */
 
+.sabalan-product-details {
+    border-top: 1px solid #e5e7eb;
 
-.footer-info {
-    text-align: left;
+    padding-top: 12px;
 
-    font-size: 12px;
+    color: #475569;
+
+    font-size: 14px;
 
     line-height: 2;
 }
 
 
-.footer-bottom {
-    border-top: 1px solid #eeeeee;
+/* دکمه */
+
+.sabalan-order-button {
+    display: block;
+
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding: 13px;
+
+    border-radius: 10px;
+
+    background: #087f5b;
+
+    color: #ffffff;
 
     text-align: center;
 
-    padding: 15px;
+    text-decoration: none;
 
-    font-size: 12px;
+    font-weight: 800;
+
+    transition: 0.2s ease;
+}
+
+.sabalan-order-button:hover {
+    background: #066b4d;
 }
 
 
-/* =========================
-   Mobile
-========================= */
+/* =========================================================
+   CONDITIONS
+   ========================================================= */
 
-@media (max-width: 850px) {
+.sabalan-conditions {
+    padding: 55px 0;
 
-    .header-container {
+    background: #f1f5f9;
+}
+
+.sabalan-conditions-box {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 16px;
+
+    padding: 25px;
+}
+
+.sabalan-conditions-box p {
+    margin: 8px 0;
+
+    color: #475569;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.sabalan-footer {
+    background: #0f172a;
+
+    color: #ffffff;
+
+    margin-top: 0;
+}
+
+.sabalan-footer-inner {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 45px 20px;
+
+    display: grid;
+
+    grid-template-columns: 180px 1fr 1.5fr;
+
+    gap: 35px;
+
+    align-items: center;
+}
+
+.sabalan-footer-inner h3 {
+    margin-bottom: 7px;
+}
+
+.sabalan-footer-inner p {
+    color: #cbd5e1;
+
+    font-size: 14px;
+
+    line-height: 2;
+}
+
+
+/* لوگوی فوتر */
+
+.sabalan-footer-logo {
+    width: 110px !important;
+    max-width: 110px !important;
+    height: auto !important;
+    max-height: 60px !important;
+
+    display: block !important;
+    object-fit: contain !important;
+}
+
+
+/* کپی رایت */
+
+.sabalan-copyright {
+    padding: 18px 20px;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(255,255,255,0.1);
+
+    color: #94a3b8;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .sabalan-products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .sabalan-trust-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .sabalan-category-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .sabalan-footer-inner {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .sabalan-header-inner {
         flex-direction: column;
 
-        padding: 18px 0;
-
-        gap: 14px;
+        padding: 15px;
     }
 
-
-    .logo {
-        min-width: auto;
+    .sabalan-logo-area {
+        width: auto;
+        min-width: 0;
 
         justify-content: center;
     }
 
+    .sabalan-cart {
+        width: auto;
+        min-width: 0;
 
-    .main-menu {
-        flex-wrap: wrap;
-
-        gap: 10px 17px;
+        justify-content: center;
     }
 
-
-    .main-menu a {
-        font-size: 13px;
-    }
-
-
-    .cart {
+    .sabalan-menu {
         width: 100%;
 
-        display: flex;
-
-        justify-content: center;
+        gap: 12px;
     }
 
-
-    .hero {
-        min-height: 290px;
-
-        margin-top: 20px;
+    .sabalan-hero h1 {
+        font-size: 32px;
     }
 
+    .sabalan-hero .sabalan-slogan {
+        font-size: 21px;
+    }
 
-    .hero-content h1 {
+    .sabalan-footer-inner {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        justify-items: center;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .sabalan-products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sabalan-trust-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sabalan-category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sabalan-page-title h1 {
         font-size: 29px;
     }
 
-
-    .hero-content p {
-        font-size: 17px;
+    .sabalan-section,
+    .sabalan-info-section {
+        padding: 45px 0;
     }
 
-
-    .hero-description {
-        font-size: 13px;
+    .sabalan-product-image {
+        height: 200px;
     }
-
-
-    .trust-section,
-    .categories-section,
-    .tracking-section,
-    .contact-section {
-        width: 94%;
-    }
-
-
-    .tracking-content {
-        flex-direction: column;
-
-        text-align: center;
-    }
-
-
-    .secondary-button {
-        margin-right: 0;
-
-        margin-top: 5px;
-    }
-
-
-    .footer-content {
-        flex-direction: column;
-
-        text-align: center;
-    }
-
-
-    .footer-brand img {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
-    .footer-info {
-        text-align: center;
-    }
-
-}
-
-
-@media (max-width: 500px) {
-
-    .hero {
-        width: 94%;
-
-        border-radius: 16px;
-    }
-
-
-    .hero-content {
-        padding: 25px 15px;
-    }
-
-
-    .hero-content h1 {
-        font-size: 25px;
-    }
-
-
-    .hero-content p {
-        font-size: 15px;
-    }
-
-
-    .section-title h2,
-    .trust-title h2 {
-        font-size: 24px;
-    }
-
-
-    .delivery-line {
-        flex-direction: column;
-
-        gap: 2px;
-
-        font-size: 12px;
-    }
-
-
-    .categories-grid {
-        grid-template-columns: 1fr;
-    }
-
-
-    .trust-grid {
-        grid-template-columns: 1fr;
-    }
-
 }
