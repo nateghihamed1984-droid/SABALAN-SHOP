@@ -1,607 +1,355 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>سبلان شاپ | خرید آسان و مطمئن</title>
+    <title>سبلان شاپ | Sabalan Shop</title>
 
-    <meta
-        name="description"
-        content="سبلان شاپ؛ خرید آسان و مطمئن انواع پوشاک، کفش، اکسسوری، عطر و ادکلن و طلا"
-    >
+    <link rel="stylesheet" href="./css/style.css">
 
-    <link rel="stylesheet" href="css/style.css">
+    <!-- استایل پشتیبان برای جلوگیری از به‌هم‌ریختگی در صورت مشکل CSS -->
+    <style>
+        .sabalan-header-logo {
+            width: 150px !important;
+            max-width: 150px !important;
+            height: auto !important;
+            max-height: 75px !important;
+            object-fit: contain !important;
+            display: block !important;
+        }
 
+        .sabalan-footer-logo {
+            width: 110px !important;
+            max-width: 110px !important;
+            height: auto !important;
+            max-height: 60px !important;
+            object-fit: contain !important;
+            display: block !important;
+        }
+
+        .sabalan-header {
+            width: 100%;
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .sabalan-header-inner {
+            max-width: 1200px;
+            min-height: 90px;
+            margin: 0 auto;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+        .sabalan-logo-area {
+            width: 180px;
+            min-width: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .sabalan-menu {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 22px;
+            flex-wrap: wrap;
+        }
+
+        .sabalan-menu a {
+            text-decoration: none;
+            color: #1f2937;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .sabalan-menu a:hover {
+            color: #087f5b;
+        }
+
+        .sabalan-cart {
+            width: 150px;
+            min-width: 150px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .sabalan-cart a {
+            text-decoration: none;
+            background: #087f5b;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 10px;
+            font-weight: 700;
+        }
+
+        @media (max-width: 800px) {
+            .sabalan-header-inner {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            .sabalan-logo-area,
+            .sabalan-cart {
+                width: auto;
+                min-width: 0;
+                justify-content: center;
+            }
+
+            .sabalan-menu {
+                gap: 12px;
+            }
+        }
+    </style>
 </head>
-
 
 <body>
 
+<header class="sabalan-header">
+    <div class="sabalan-header-inner">
 
-    <!-- =========================
-         Header
-    ========================== -->
-
-    <header class="site-header" id="home">
-
-        <div class="header-container">
-
-
-            <!-- لوگو -->
-
-            <a href="#home" class="logo">
-
+        <div class="sabalan-logo-area">
+            <a href="./index.html">
                 <img
-                    src="static/images/sabalan_shop_logo.png"
+                    src="./static/images/sabalan_shop_logo.png"
                     alt="لوگوی سبلان شاپ"
+                    class="sabalan-header-logo"
                 >
+            </a>
+        </div>
 
+        <nav class="sabalan-menu">
+            <a href="./index.html">صفحه اصلی</a>
+            <a href="./products.html">محصولات</a>
+            <a href="#tracking">پیگیری سفارش</a>
+            <a href="#rules">قوانین و شرایط</a>
+            <a href="#contact">تماس با ما</a>
+        </nav>
+
+        <div class="sabalan-cart">
+            <a href="./products.html">🛒 مشاهده محصولات</a>
+        </div>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- بخش اصلی -->
+    <section class="sabalan-hero">
+        <div class="sabalan-container">
+
+            <h1>خریدی آسان و مطمئن</h1>
+
+            <p class="sabalan-slogan">
+                از دل آذربایجان تا خانه شما
+            </p>
+
+            <p>
+                سبلان شاپ؛ فروشگاهی برای خرید آسان، مطمئن و با خیال راحت.
+            </p>
+
+            <a href="./products.html" class="sabalan-main-button">
+                مشاهده محصولات
             </a>
 
-
-            <!-- منوی اصلی -->
-
-            <nav class="main-menu">
-
-                <a href="#home">
-                    صفحه اصلی
-                </a>
-
-                <a href="#categories">
-                    محصولات
-                </a>
-
-                <a href="#tracking">
-                    پیگیری سفارش
-                </a>
-
-                <a href="#rules">
-                    قوانین و شرایط
-                </a>
-
-                <a href="#contact">
-                    تماس با ما
-                </a>
-
-            </nav>
-
-
-            <!-- سبد خرید -->
-
-            <div class="cart">
-
-                <button type="button">
-
-                    🛒 سبد خرید
-
-                    <span>
-                        0
-                    </span>
-
-                </button>
-
-            </div>
-
-
         </div>
-
-    </header>
-
+    </section>
 
 
-    <!-- =========================
-         Main
-    ========================== -->
+    <!-- مزایا -->
+    <section class="sabalan-section">
+        <div class="sabalan-container">
 
-    <main>
+            <h2>چرا سبلان شاپ؟</h2>
 
+            <div class="sabalan-trust-grid">
 
-        <!-- =========================
-             Hero
-        ========================== -->
-
-        <section class="hero">
-
-            <div class="hero-content">
-
-                <div class="hero-badge">
-                    🛍️ خرید آنلاین آسان و مطمئن
-                </div>
-
-                <h1>
-                    خریدی آسان و مطمئن
-                </h1>
-
-                <p>
-                    از دل آذربایجان تا خانه شما
-                </p>
-
-                <span class="hero-description">
-                    انتخاب کنید، سفارش دهید و کالا را درب منزل تحویل بگیرید.
-                </span>
-
-
-                <a href="#categories" class="hero-button">
-
-                    مشاهده محصولات
-
-                </a>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             اعتماد و مزایای خرید
-        ========================== -->
-
-        <section class="trust-section" id="rules">
-
-
-            <div class="trust-title">
-
-                <span class="section-badge">
-                    خرید با خیال راحت
-                </span>
-
-                <h2>
-                    چرا از سبلان شاپ خرید کنیم؟
-                </h2>
-
-                <p>
-                    تلاش ما ایجاد یک خرید آسان، شفاف و مطمئن برای مشتریان است.
-                </p>
-
-            </div>
-
-
-
-            <div class="trust-grid">
-
-
-                <!-- پرداخت درب منزل -->
-
-                <div class="trust-card">
-
-                    <div class="trust-icon">
-                        🏠
-                    </div>
-
-                    <h3>
-                        پرداخت درب منزل
-                    </h3>
-
+                <div class="sabalan-trust-card">
+                    <div class="sabalan-icon">🏠</div>
+                    <h3>پرداخت درب منزل</h3>
                     <p>
-                        مبلغ سفارش پس از رویت و تحویل کالا درب منزل پرداخت می‌شود.
+                        پس از رویت و تحویل کالا، مبلغ سفارش را پرداخت کنید.
                     </p>
-
                 </div>
 
-
-
-                <!-- ارسال -->
-
-                <div class="trust-card">
-
-                    <div class="trust-icon">
-                        🚚
-                    </div>
-
-                    <h3>
-                        ارسال مطمئن
-                    </h3>
-
+                <div class="sabalan-trust-card">
+                    <div class="sabalan-icon">🚚</div>
+                    <h3>ارسال مطمئن</h3>
                     <p>
-                        زمان تقریبی تحویل هر محصول هنگام ثبت سفارش به مشتری اعلام می‌شود.
+                        سفارش شما با دقت بسته‌بندی و ارسال می‌شود.
                     </p>
-
                 </div>
 
-
-
-                <!-- تعویض و مرجوعی -->
-
-                <div class="trust-card">
-
-                    <div class="trust-icon">
-                        🔄
-                    </div>
-
-                    <h3>
-                        تعویض و مرجوعی
-                    </h3>
-
+                <div class="sabalan-trust-card">
+                    <div class="sabalan-icon">🔄</div>
+                    <h3>تعویض و مرجوعی</h3>
                     <p>
-                        درخواست تعویض یا مرجوعی کالا تا ۱ روز پس از تحویل امکان‌پذیر است.
+                        درخواست تعویض یا مرجوعی تا ۱ روز پس از تحویل امکان‌پذیر است.
                     </p>
-
-                    <a href="#rules">
-                        مشاهده قوانین
-                    </a>
-
                 </div>
 
-
-
-                <!-- خرید مطمئن -->
-
-                <div class="trust-card">
-
-                    <div class="trust-icon">
-                        🛡️
-                    </div>
-
-                    <h3>
-                        بررسی کالا هنگام تحویل
-                    </h3>
-
+                <div class="sabalan-trust-card">
+                    <div class="sabalan-icon">🔎</div>
+                    <h3>بررسی کالا</h3>
                     <p>
-                        مشتری می‌تواند کالا را هنگام تحویل بررسی کرده و پس از اطمینان آن را تحویل بگیرد.
+                        کالا را هنگام تحویل بررسی و سپس دریافت کنید.
                     </p>
-
                 </div>
-
-
-            </div>
-
-
-
-            <!-- =========================
-                 شرایط ارسال
-            ========================== -->
-
-            <div class="delivery-box">
-
-                <div class="delivery-title">
-                    🚚 شرایط ارسال سفارش
-                </div>
-
-                <div class="delivery-line delivery-city">
-                    <span>📍</span>
-                    <strong>
-                        ارسال رایگان فقط در محدوده شهر تبریز
-                    </strong>
-                </div>
-
-                <div class="delivery-line delivery-national">
-                    <span>📦</span>
-                    <strong>
-                        ارسال به سایر نقاط کشور با احتساب هزینه پستی
-                    </strong>
-                </div>
-
-            </div>
-
-
-        </section>
-
-
-
-        <!-- =========================
-             دسته بندی محصولات
-        ========================== -->
-
-        <section class="categories-section" id="categories">
-
-
-            <div class="section-title">
-
-                <span class="section-badge">
-                    محصولات فروشگاه
-                </span>
-
-                <h2>
-                    دسته‌بندی محصولات
-                </h2>
-
-                <p>
-                    محصول مورد نظر خود را از دسته‌بندی زیر انتخاب کنید
-                </p>
-
-            </div>
-
-
-
-            <div class="categories-grid">
-
-
-                <!-- پوشاک -->
-
-                <div class="category-card">
-
-                    <div class="category-icon">
-                        👕
-                    </div>
-
-                    <h3>
-                        پوشاک
-                    </h3>
-
-                    <div class="category-tabs">
-
-                        <a href="#">
-                            مردانه
-                        </a>
-
-                        <a href="#">
-                            زنانه
-                        </a>
-
-                        <a href="#">
-                            بچه‌گانه
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- کفش -->
-
-                <div class="category-card">
-
-                    <div class="category-icon">
-                        👟
-                    </div>
-
-                    <h3>
-                        کفش
-                    </h3>
-
-                    <div class="category-tabs">
-
-                        <a href="#">
-                            مردانه
-                        </a>
-
-                        <a href="#">
-                            زنانه
-                        </a>
-
-                        <a href="#">
-                            بچه‌گانه
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- اکسسوری -->
-
-                <div class="category-card">
-
-                    <div class="category-icon">
-                        💎
-                    </div>
-
-                    <h3>
-                        اکسسوری و زیورآلات
-                    </h3>
-
-                    <div class="category-tabs">
-
-                        <a href="#">
-                            مردانه
-                        </a>
-
-                        <a href="#">
-                            زنانه
-                        </a>
-
-                        <a href="#">
-                            بچه‌گانه
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- عطر -->
-
-                <div class="category-card">
-
-                    <div class="category-icon">
-                        🌸
-                    </div>
-
-                    <h3>
-                        عطر و ادکلن
-                    </h3>
-
-                    <div class="category-tabs">
-
-                        <a href="#">
-                            مردانه
-                        </a>
-
-                        <a href="#">
-                            زنانه
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- طلا -->
-
-                <div class="category-card">
-
-                    <div class="category-icon">
-                        ✨
-                    </div>
-
-                    <h3>
-                        طلا
-                    </h3>
-
-                    <div class="category-tabs">
-
-                        <a href="#">
-                            مردانه
-                        </a>
-
-                        <a href="#">
-                            زنانه
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- دسته های بیشتر -->
-
-                <div class="category-card future-category">
-
-                    <div class="category-icon">
-                        ➕
-                    </div>
-
-                    <h3>
-                        دسته‌های بیشتر
-                    </h3>
-
-                    <p>
-                        دسته‌های جدید به مرور به فروشگاه اضافه خواهند شد.
-                    </p>
-
-                </div>
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             پیگیری سفارش
-        ========================== -->
-
-        <section class="tracking-section" id="tracking">
-
-            <div class="tracking-content">
-
-                <div class="tracking-icon">
-                    📦
-                </div>
-
-                <div>
-
-                    <h2>
-                        پیگیری سفارش
-                    </h2>
-
-                    <p>
-                        در مراحل بعدی می‌توانید با وارد کردن کد سفارش،
-                        وضعیت سفارش خود را مشاهده کنید.
-                    </p>
-
-                </div>
-
-                <button type="button" class="secondary-button">
-                    پیگیری سفارش
-                </button>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             تماس با ما
-        ========================== -->
-
-        <section class="contact-section" id="contact">
-
-            <div class="section-title">
-
-                <span class="section-badge">
-                    ارتباط با ما
-                </span>
-
-                <h2>
-                    تماس با سبلان شاپ
-                </h2>
-
-                <p>
-                    برای پرسش درباره محصولات و سفارش‌ها با ما در ارتباط باشید.
-                </p>
-
-            </div>
-
-        </section>
-
-
-    </main>
-
-
-
-    <!-- =========================
-         Footer
-    ========================== -->
-
-    <footer class="site-footer">
-
-        <div class="footer-content">
-
-            <div class="footer-brand">
-
-                <img
-                    src="static/images/sabalan_shop_logo.png"
-                    alt="سبلان شاپ"
-                >
-
-                <p>
-                    خریدی آسان و مطمئن برای شما
-                </p>
-
-            </div>
-
-
-            <div class="footer-info">
-
-             <p>  
-              🚚 ارسال رایگان فقط در محدوده شهر تبریز
-             </p>
-
-             <p>
-              📦 ارسال به سایر نقاط کشور با احتساب هزینه پستی
-             </p>
-
-             <p>
-              🏠 پرداخت درب منزل پس از رویت و تحویل کالا
-             </p>
 
             </div>
 
         </div>
+    </section>
 
 
-        <div class="footer-bottom">
+    <!-- ارسال -->
+    <section class="sabalan-delivery">
+        <div class="sabalan-container">
 
-            © تمامی حقوق برای سبلان شاپ محفوظ است.
+            <h2>🚚 شرایط ارسال سفارش</h2>
+
+            <p>
+                ارسال رایگان فقط در محدوده شهر تبریز
+            </p>
+
+            <p>
+                ارسال به سایر نقاط کشور با احتساب هزینه پستی
+            </p>
+
+            <p>
+                🏠 پرداخت درب منزل پس از رویت و تحویل کالا
+            </p>
 
         </div>
+    </section>
 
-    </footer>
 
+    <!-- دسته بندی -->
+    <section class="sabalan-section">
+        <div class="sabalan-container">
+
+            <h2>دسته‌بندی محصولات</h2>
+
+            <div class="sabalan-category-grid">
+
+                <a href="./products.html" class="sabalan-category-card">
+                    👕
+                    <strong>پوشاک</strong>
+                    <span>زنانه، مردانه و کودک</span>
+                </a>
+
+                <a href="./products.html" class="sabalan-category-card">
+                    👟
+                    <strong>کفش</strong>
+                    <span>انواع کفش</span>
+                </a>
+
+                <a href="./products.html" class="sabalan-category-card">
+                    💍
+                    <strong>اکسسوری و زیورآلات</strong>
+                    <span>محصولات متنوع</span>
+                </a>
+
+                <a href="./products.html" class="sabalan-category-card">
+                    🌸
+                    <strong>عطر و ادکلن</strong>
+                    <span>زنانه و مردانه</span>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- پیگیری -->
+    <section class="sabalan-info-section" id="tracking">
+        <div class="sabalan-container">
+
+            <h2>📦 پیگیری سفارش</h2>
+
+            <p>
+                برای پیگیری سفارش خود می‌توانید با پشتیبانی سبلان شاپ تماس بگیرید
+                و شماره سفارش خود را اعلام کنید.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- قوانین -->
+    <section class="sabalan-info-section" id="rules">
+        <div class="sabalan-container">
+
+            <h2>📋 قوانین و شرایط</h2>
+
+            <ul>
+                <li>پرداخت سفارش درب منزل پس از رویت و تحویل کالا انجام می‌شود.</li>
+                <li>مشتری می‌تواند کالا را هنگام تحویل بررسی کند.</li>
+                <li>درخواست تعویض یا مرجوعی حداکثر تا ۱ روز پس از تحویل قابل ثبت است.</li>
+                <li>ارسال رایگان فقط در محدوده شهر تبریز انجام می‌شود.</li>
+                <li>ارسال به سایر نقاط کشور با احتساب هزینه پستی انجام خواهد شد.</li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <!-- تماس -->
+    <section class="sabalan-info-section" id="contact">
+        <div class="sabalan-container">
+
+            <h2>☎️ تماس با ما</h2>
+
+            <p>
+                برای ثبت سفارش، پیگیری سفارش و دریافت اطلاعات بیشتر با پشتیبانی
+                سبلان شاپ در ارتباط باشید.
+            </p>
+
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="sabalan-footer">
+
+    <div class="sabalan-footer-inner">
+
+        <div>
+            <img
+                src="./static/images/sabalan_shop_logo.png"
+                alt="لوگوی سبلان شاپ"
+                class="sabalan-footer-logo"
+            >
+        </div>
+
+        <div>
+            <h3>سبلان شاپ</h3>
+            <p>از دل آذربایجان تا خانه شما</p>
+        </div>
+
+        <div>
+            <p>🚚 ارسال رایگان فقط در محدوده شهر تبریز</p>
+            <p>📦 ارسال به سایر نقاط کشور با احتساب هزینه پستی</p>
+            <p>🏠 پرداخت درب منزل پس از رویت و تحویل کالا</p>
+        </div>
+
+    </div>
+
+    <div class="sabalan-copyright">
+        © تمامی حقوق برای سبلان شاپ محفوظ است.
+    </div>
+
+</footer>
 
 </body>
-
 </html>
