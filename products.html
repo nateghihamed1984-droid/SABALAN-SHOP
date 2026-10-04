@@ -1,283 +1,97 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>محصولات | سبلان شاپ</title>
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css?v=2">
 
-    <!-- استایل پشتیبان -->
-    <style>
-        .sabalan-header-logo {
-            width: 150px !important;
-            max-width: 150px !important;
-            height: auto !important;
-            max-height: 75px !important;
-            object-fit: contain !important;
-            display: block !important;
-        }
-
-        .sabalan-footer-logo {
-            width: 110px !important;
-            max-width: 110px !important;
-            height: auto !important;
-            max-height: 60px !important;
-            object-fit: contain !important;
-            display: block !important;
-        }
-
-        .sabalan-header {
-            width: 100%;
-            background: #ffffff;
-            border-bottom: 1px solid #e5e7eb;
-        }
-
-        .sabalan-header-inner {
-            max-width: 1200px;
-            min-height: 90px;
-            margin: 0 auto;
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 25px;
-        }
-
-        .sabalan-logo-area {
-            width: 180px;
-            min-width: 180px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-        }
-
-        .sabalan-menu {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 22px;
-            flex-wrap: wrap;
-        }
-
-        .sabalan-menu a {
-            text-decoration: none;
-            color: #1f2937;
-            font-weight: 600;
-            white-space: nowrap;
-        }
-
-        .sabalan-menu a:hover {
-            color: #087f5b;
-        }
-
-        .sabalan-cart {
-            width: 150px;
-            min-width: 150px;
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .sabalan-cart a {
-            text-decoration: none;
-            background: #087f5b;
-            color: white;
-            padding: 10px 18px;
-            border-radius: 10px;
-            font-weight: 700;
-        }
-
-        .sabalan-products-grid {
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(4, minmax(0, 1fr));
-            gap: 24px;
-            margin-top: 30px;
-        }
-
-        .sabalan-product-card {
-            background: #ffffff;
-            border: 1px solid #e5e7eb;
-            border-radius: 18px;
-            overflow: hidden;
-            box-shadow: 0 5px 18px rgba(0,0,0,0.07);
-            text-align: right;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .sabalan-product-image {
-            width: 100%;
-            height: 220px;
-            background: #f1f5f9;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 65px;
-        }
-
-        .sabalan-product-content {
-            padding: 20px;
-        }
-
-        .sabalan-product-code {
-            color: #64748b;
-            font-size: 13px;
-            margin-bottom: 8px;
-        }
-
-        .sabalan-product-category {
-            display: inline-block;
-            background: #e6f4ef;
-            color: #087f5b;
-            padding: 5px 10px;
-            border-radius: 20px;
-            font-size: 13px;
-            margin-bottom: 12px;
-        }
-
-        .sabalan-product-title {
-            margin: 0 0 10px;
-            font-size: 19px;
-            color: #111827;
-        }
-
-        .sabalan-product-description {
-            color: #4b5563;
-            line-height: 1.9;
-            min-height: 55px;
-        }
-
-        .sabalan-product-price {
-            font-size: 21px;
-            font-weight: 800;
-            color: #087f5b;
-            margin: 15px 0;
-        }
-
-        .sabalan-product-orders,
-        .sabalan-product-popular {
-            font-size: 13px;
-            line-height: 1.8;
-            color: #475569;
-        }
-
-        .sabalan-product-popular {
-            color: #d97706;
-        }
-
-        .sabalan-product-rating {
-            margin: 12px 0;
-            font-weight: 700;
-        }
-
-        .sabalan-product-details {
-            border-top: 1px solid #e5e7eb;
-            padding-top: 12px;
-            color: #475569;
-            line-height: 2;
-            font-size: 14px;
-        }
-
-        .sabalan-order-button {
-            display: block;
-            width: 100%;
-            margin-top: 18px;
-            padding: 13px;
-            border: none;
-            border-radius: 10px;
-            background: #087f5b;
-            color: #ffffff;
-            text-decoration: none;
-            text-align: center;
-            font-weight: 800;
-            cursor: pointer;
-            box-sizing: border-box;
-        }
-
-        .sabalan-order-button:hover {
-            background: #066b4d;
-        }
-
-        @media (max-width: 1000px) {
-            .sabalan-products-grid {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-        }
-
-        @media (max-width: 800px) {
-            .sabalan-header-inner {
-                flex-direction: column;
-                padding: 15px;
-            }
-
-            .sabalan-logo-area,
-            .sabalan-cart {
-                width: auto;
-                min-width: 0;
-                justify-content: center;
-            }
-
-            .sabalan-menu {
-                gap: 12px;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .sabalan-products-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </head>
+
 
 <body>
 
+
 <header class="sabalan-header">
+
     <div class="sabalan-header-inner">
 
+
         <div class="sabalan-logo-area">
+
             <a href="./index.html">
+
                 <img
                     src="./static/images/sabalan_shop_logo.png"
                     alt="لوگوی سبلان شاپ"
                     class="sabalan-header-logo"
+                    onerror="this.onerror=null;this.src='./site/static/images/sabalan_shop_logo.png';"
                 >
+
             </a>
+
         </div>
+
 
         <nav class="sabalan-menu">
+
             <a href="./index.html">صفحه اصلی</a>
+
             <a href="./products.html">محصولات</a>
+
             <a href="./index.html#tracking">پیگیری سفارش</a>
+
             <a href="./index.html#rules">قوانین و شرایط</a>
+
             <a href="./index.html#contact">تماس با ما</a>
+
         </nav>
 
+
         <div class="sabalan-cart">
-            <a href="./products.html">🛒 محصولات</a>
+
+            <a href="./products.html">
+                🛒 محصولات
+            </a>
+
         </div>
 
+
     </div>
+
 </header>
+
 
 
 <main>
 
+
+    <!-- عنوان صفحه -->
+
     <section class="sabalan-page-title">
+
         <div class="sabalan-container">
 
-            <h1>محصولات سبلان شاپ</h1>
+            <h1>
+                محصولات سبلان شاپ
+            </h1>
 
             <p>
                 محصولات مورد نظر خود را انتخاب و سفارش خود را ثبت کنید.
             </p>
 
         </div>
+
     </section>
 
+
+
+    <!-- محصولات -->
 
     <section class="sabalan-section">
 
@@ -286,8 +100,9 @@
             <div class="sabalan-products-grid">
 
 
-                <!-- محصول 1 -->
-                <article class="sabalan-product-card">
+                <!-- محصول P-001 -->
+
+                <div class="sabalan-product-card">
 
                     <div class="sabalan-product-image">
                         👕
@@ -299,20 +114,20 @@
                             کد محصول: P-001
                         </div>
 
-                        <span class="sabalan-product-category">
+                        <div class="sabalan-product-category">
                             پوشاک
-                        </span>
+                        </div>
 
                         <h2 class="sabalan-product-title">
                             محصول پوشاک شماره ۱
                         </h2>
 
                         <p class="sabalan-product-description">
-                            محصول با کیفیت مناسب استفاده روزمره و قابل سفارش از سبلان شاپ.
+                            محصول با کیفیت مناسب استفاده روزمره.
                         </p>
 
                         <div class="sabalan-product-price">
-                            ۴۹۹,۰۰۰ تومان
+                            قیمت: ۵۹۹,۰۰۰ تومان
                         </div>
 
                         <div class="sabalan-product-orders">
@@ -320,19 +135,32 @@
                         </div>
 
                         <div class="sabalan-product-popular">
-                            ⭐ این محصول اخیراً مورد توجه مشتریان بوده است.
+                            این محصول اخیراً مورد توجه مشتریان بوده است.
                         </div>
 
                         <div class="sabalan-product-rating">
-                            ⭐ ۴.۸ از ۵
-                            <span>(۸ نظر)</span>
+                            ⭐⭐⭐⭐⭐
+                            <span>۴.۸ از ۵</span>
                         </div>
 
                         <div class="sabalan-product-details">
-                            🚚 ارسال رایگان در محدوده شهر تبریز<br>
-                            📦 سایر نقاط کشور با احتساب هزینه پستی<br>
-                            ⏱ زمان تحویل: ۲ تا ۳ روز کاری<br>
-                            🏠 پرداخت درب منزل پس از رویت و تحویل کالا
+
+                            <p>
+                                🚚 ارسال رایگان فقط در محدوده شهر تبریز
+                            </p>
+
+                            <p>
+                                📦 ارسال به سایر نقاط کشور با احتساب هزینه پستی
+                            </p>
+
+                            <p>
+                                ⏱ زمان تحویل: ۲ تا ۴ روز کاری
+                            </p>
+
+                            <p>
+                                🏠 درب منزل پس از رویت و تحویل کالا
+                            </p>
+
                         </div>
 
                         <a href="#" class="sabalan-order-button">
@@ -341,11 +169,13 @@
 
                     </div>
 
-                </article>
+                </div>
 
 
-                <!-- محصول 2 -->
-                <article class="sabalan-product-card">
+
+                <!-- محصول P-002 -->
+
+                <div class="sabalan-product-card">
 
                     <div class="sabalan-product-image">
                         👟
@@ -357,40 +187,53 @@
                             کد محصول: P-002
                         </div>
 
-                        <span class="sabalan-product-category">
+                        <div class="sabalan-product-category">
                             کفش
-                        </span>
+                        </div>
 
                         <h2 class="sabalan-product-title">
                             محصول کفش شماره ۲
                         </h2>
 
                         <p class="sabalan-product-description">
-                            کفش با طراحی مناسب و کیفیت مطلوب برای استفاده روزمره.
+                            محصول با کیفیت مناسب استفاده روزمره.
                         </p>
 
                         <div class="sabalan-product-price">
-                            ۷۹۹,۰۰۰ تومان
+                            قیمت: ۷۹۹,۰۰۰ تومان
                         </div>
 
                         <div class="sabalan-product-orders">
-                            تاکنون ۲۴ سفارش ثبت شده
+                            تاکنون ۸ سفارش ثبت شده
                         </div>
 
                         <div class="sabalan-product-popular">
-                            ⭐ این محصول اخیراً مورد توجه مشتریان بوده است.
+                            این محصول اخیراً مورد توجه مشتریان بوده است.
                         </div>
 
                         <div class="sabalan-product-rating">
-                            ⭐ ۴.۹ از ۵
-                            <span>(۱۵ نظر)</span>
+                            ⭐⭐⭐⭐⭐
+                            <span>۴.۷ از ۵</span>
                         </div>
 
                         <div class="sabalan-product-details">
-                            🚚 ارسال رایگان در محدوده شهر تبریز<br>
-                            📦 سایر نقاط کشور با احتساب هزینه پستی<br>
-                            ⏱ زمان تحویل: ۲ تا ۴ روز کاری<br>
-                            🏠 پرداخت درب منزل پس از رویت و تحویل کالا
+
+                            <p>
+                                🚚 ارسال رایگان فقط در محدوده شهر تبریز
+                            </p>
+
+                            <p>
+                                📦 ارسال به سایر نقاط کشور با احتساب هزینه پستی
+                            </p>
+
+                            <p>
+                                ⏱ زمان تحویل: ۲ تا ۴ روز کاری
+                            </p>
+
+                            <p>
+                                🏠 درب منزل پس از رویت و تحویل کالا
+                            </p>
+
                         </div>
 
                         <a href="#" class="sabalan-order-button">
@@ -399,11 +242,13 @@
 
                     </div>
 
-                </article>
+                </div>
 
 
-                <!-- محصول 3 -->
-                <article class="sabalan-product-card">
+
+                <!-- محصول P-003 -->
+
+                <div class="sabalan-product-card">
 
                     <div class="sabalan-product-image">
                         💍
@@ -415,40 +260,53 @@
                             کد محصول: P-003
                         </div>
 
-                        <span class="sabalan-product-category">
+                        <div class="sabalan-product-category">
                             اکسسوری و زیورآلات
-                        </span>
+                        </div>
 
                         <h2 class="sabalan-product-title">
                             محصول اکسسوری شماره ۳
                         </h2>
 
                         <p class="sabalan-product-description">
-                            اکسسوری زیبا و کاربردی برای تکمیل استایل شما.
+                            محصول زیبا و مناسب استفاده روزمره و هدیه.
                         </p>
 
                         <div class="sabalan-product-price">
-                            ۳۹۹,۰۰۰ تومان
+                            قیمت: ۴۹۹,۰۰۰ تومان
                         </div>
 
                         <div class="sabalan-product-orders">
-                            تاکنون ۹ سفارش ثبت شده
+                            تاکنون ۶ سفارش ثبت شده
                         </div>
 
                         <div class="sabalan-product-popular">
-                            ⭐ این محصول اخیراً مورد توجه مشتریان بوده است.
+                            این محصول اخیراً مورد توجه مشتریان بوده است.
                         </div>
 
                         <div class="sabalan-product-rating">
-                            ⭐ ۴.۷ از ۵
-                            <span>(۶ نظر)</span>
+                            ⭐⭐⭐⭐⭐
+                            <span>۴.۹ از ۵</span>
                         </div>
 
                         <div class="sabalan-product-details">
-                            🚚 ارسال رایگان در محدوده شهر تبریز<br>
-                            📦 سایر نقاط کشور با احتساب هزینه پستی<br>
-                            ⏱ زمان تحویل: ۱ تا ۳ روز کاری<br>
-                            🏠 پرداخت درب منزل پس از رویت و تحویل کالا
+
+                            <p>
+                                🚚 ارسال رایگان فقط در محدوده شهر تبریز
+                            </p>
+
+                            <p>
+                                📦 ارسال به سایر نقاط کشور با احتساب هزینه پستی
+                            </p>
+
+                            <p>
+                                ⏱ زمان تحویل: ۲ تا ۴ روز کاری
+                            </p>
+
+                            <p>
+                                🏠 درب منزل پس از رویت و تحویل کالا
+                            </p>
+
                         </div>
 
                         <a href="#" class="sabalan-order-button">
@@ -457,14 +315,16 @@
 
                     </div>
 
-                </article>
+                </div>
 
 
-                <!-- محصول 4 -->
-                <article class="sabalan-product-card">
+
+                <!-- محصول P-004 -->
+
+                <div class="sabalan-product-card">
 
                     <div class="sabalan-product-image">
-                        🌸
+                        🌹
                     </div>
 
                     <div class="sabalan-product-content">
@@ -473,40 +333,53 @@
                             کد محصول: P-004
                         </div>
 
-                        <span class="sabalan-product-category">
+                        <div class="sabalan-product-category">
                             عطر و ادکلن
-                        </span>
+                        </div>
 
                         <h2 class="sabalan-product-title">
                             محصول عطر و ادکلن شماره ۴
                         </h2>
 
                         <p class="sabalan-product-description">
-                            عطر و ادکلن با رایحه جذاب مناسب استفاده روزمره و هدیه.
+                            محصول خوشبو و مناسب استفاده روزمره.
                         </p>
 
                         <div class="sabalan-product-price">
-                            ۱,۲۹۹,۰۰۰ تومان
+                            قیمت: ۸۹۹,۰۰۰ تومان
                         </div>
 
                         <div class="sabalan-product-orders">
-                            تاکنون ۱۸ سفارش ثبت شده
+                            تاکنون ۱۰ سفارش ثبت شده
                         </div>
 
                         <div class="sabalan-product-popular">
-                            ⭐ این محصول اخیراً مورد توجه مشتریان بوده است.
+                            این محصول اخیراً مورد توجه مشتریان بوده است.
                         </div>
 
                         <div class="sabalan-product-rating">
-                            ⭐ ۴.۹ از ۵
-                            <span>(۱۲ نظر)</span>
+                            ⭐⭐⭐⭐⭐
+                            <span>۴.۸ از ۵</span>
                         </div>
 
                         <div class="sabalan-product-details">
-                            🚚 ارسال رایگان در محدوده شهر تبریز<br>
-                            📦 سایر نقاط کشور با احتساب هزینه پستی<br>
-                            ⏱ زمان تحویل: ۲ تا ۴ روز کاری<br>
-                            🏠 پرداخت درب منزل پس از رویت و تحویل کالا
+
+                            <p>
+                                🚚 ارسال رایگان فقط در محدوده شهر تبریز
+                            </p>
+
+                            <p>
+                                📦 ارسال به سایر نقاط کشور با احتساب هزینه پستی
+                            </p>
+
+                            <p>
+                                ⏱ زمان تحویل: ۲ تا ۴ روز کاری
+                            </p>
+
+                            <p>
+                                🏠 درب منزل پس از رویت و تحویل کالا
+                            </p>
+
                         </div>
 
                         <a href="#" class="sabalan-order-button">
@@ -515,31 +388,48 @@
 
                     </div>
 
-                </article>
+                </div>
+
 
             </div>
 
         </div>
+
     </section>
 
+
+
+    <!-- شرایط سفارش -->
 
     <section class="sabalan-conditions">
 
         <div class="sabalan-container">
 
-            <h2>📋 شرایط سفارش</h2>
+            <h2>
+                📋 شرایط سفارش
+            </h2>
 
             <div class="sabalan-conditions-box">
 
-                <p>🏠 پرداخت درب منزل پس از رویت و تحویل کالا</p>
+                <p>
+                    🏠 پرداخت درب منزل پس از رویت و تحویل کالا انجام می‌شود.
+                </p>
 
-                <p>🚚 ارسال رایگان فقط در محدوده شهر تبریز</p>
+                <p>
+                    🔎 امکان بررسی کالا هنگام تحویل سفارش وجود دارد.
+                </p>
 
-                <p>📦 ارسال به سایر نقاط کشور با احتساب هزینه پستی</p>
+                <p>
+                    🚚 ارسال رایگان فقط در محدوده شهر تبریز.
+                </p>
 
-                <p>🔄 درخواست تعویض یا مرجوعی حداکثر تا ۱ روز پس از تحویل</p>
+                <p>
+                    📦 ارسال به سایر نقاط کشور با احتساب هزینه پستی انجام خواهد شد.
+                </p>
 
-                <p>🔎 امکان بررسی کالا هنگام تحویل</p>
+                <p>
+                    🔄 درخواست تعویض یا مرجوعی حداکثر تا ۱ روز پس از تحویل کالا امکان‌پذیر است.
+                </p>
 
             </div>
 
@@ -547,39 +437,71 @@
 
     </section>
 
+
 </main>
 
+
+
+<!-- فوتر -->
 
 <footer class="sabalan-footer">
 
     <div class="sabalan-footer-inner">
 
-        <div>
+
+        <div class="sabalan-footer-logo-box">
+
             <img
                 src="./static/images/sabalan_shop_logo.png"
                 alt="لوگوی سبلان شاپ"
                 class="sabalan-footer-logo"
+                onerror="this.onerror=null;this.src='./site/static/images/sabalan_shop_logo.png';"
             >
+
         </div>
 
-        <div>
-            <h3>سبلان شاپ</h3>
-            <p>از دل آذربایجان تا خانه شما</p>
+
+        <div class="sabalan-footer-column">
+
+            <h3>
+                سبلان شاپ
+            </h3>
+
+            <p>
+                از دل آذربایجان تا خانه شما
+            </p>
+
         </div>
 
-        <div>
-            <p>🚚 ارسال رایگان فقط در محدوده شهر تبریز</p>
-            <p>📦 ارسال به سایر نقاط کشور با احتساب هزینه پستی</p>
-            <p>🏠 پرداخت درب منزل پس از رویت و تحویل کالا</p>
+
+        <div class="sabalan-footer-column">
+
+            <p>
+                🚚 ارسال رایگان فقط در محدوده شهر تبریز
+            </p>
+
+            <p>
+                📦 ارسال به سایر نقاط کشور با احتساب هزینه پستی
+            </p>
+
+            <p>
+                🏠 پرداخت درب منزل پس از رویت و تحویل کالا
+            </p>
+
         </div>
+
 
     </div>
 
+
     <div class="sabalan-copyright">
+
         © تمامی حقوق برای سبلان شاپ محفوظ است.
+
     </div>
 
 </footer>
+
 
 </body>
 </html>
