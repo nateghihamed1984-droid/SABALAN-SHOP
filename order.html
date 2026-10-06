@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded",function(){
    e.preventDefault();msg.style.display="block";msg.innerHTML="⏳ در حال ثبت سفارش...";
    const data={product:productSelect.value,quantity:document.getElementById("quantity").value,fullname:document.getElementById("fullname").value,phone:document.getElementById("phone").value,province:document.getElementById("province").value,city:document.getElementById("city").value,address:document.getElementById("address").value,customer_ref:ref};
    try{
-     const r=await fetch("http://127.0.0.1:8000/api/orders",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)});
+     const r=await fetch("https://bid-else-vaccine-favourite.trycloudflare.com/api/orders",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)});
      const result=await r.json();
      if(result.success){msg.innerHTML="<strong>✅ سفارش با موفقیت ثبت شد.</strong><br><br>شماره سفارش: <strong>#"+result.order_id+"</strong><br>وضعیت سفارش: "+result.status+"<br><br>شناسه مشتری روبیکا همراه سفارش ذخیره شد.";}
      else msg.innerHTML="❌ "+result.message;
