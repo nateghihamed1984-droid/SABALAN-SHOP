@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ثبت سفارش | سبلان شاپ</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#f4f8f6;color:#173b2e}.site-header{background:#fff;border-bottom:1px solid #dce9e3}.header-inner{max-width:1200px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:25px}.logo{width:150px;height:auto}.nav{display:flex;gap:20px;flex-wrap:wrap}.nav a{text-decoration:none;color:#245843;font-weight:bold;font-size:14px}.container{max-width:1000px;margin:40px auto;padding:0 20px}.order-box{background:#fff;border:1px solid #dce9e3;border-radius:18px;padding:30px;box-shadow:0 8px 30px rgba(20,60,46,.06)}h1{margin-top:0;color:#176b4d}.subtitle{color:#62756d}.selected-product{display:none;background:#eef8f3;border:1px solid #cfe6da;border-radius:14px;padding:15px;margin:18px 0;line-height:2}.selected-product strong{color:#176b4d}.products-link{display:inline-block;margin-bottom:22px;color:#176b4d;font-weight:bold;text-decoration:none}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}label{font-weight:bold;font-size:14px;color:#315c4b}input,select,textarea{width:100%;border:1px solid #ccd9d3;border-radius:10px;padding:12px;font-family:inherit;font-size:15px;background:#fff;outline:none}input:focus,select:focus,textarea:focus{border-color:#43a27d;box-shadow:0 0 0 3px rgba(67,162,125,.1)}textarea{min-height:110px;resize:vertical}.submit-btn{grid-column:1/-1;border:0;border-radius:11px;background:#176b4d;color:#fff;font-family:inherit;font-size:17px;font-weight:bold;padding:14px;cursor:pointer}.submit-btn:hover{background:#12583f}.notice{margin-top:22px;background:#f0f7f4;border:1px solid #d7e8e0;border-radius:12px;padding:15px;line-height:2;color:#315c4b;font-size:14px}#orderMessage{display:none;margin-top:20px;border-radius:12px;padding:16px;line-height:2;background:#eaf7ef;border:1px solid #bfe0ca;color:#215c36}.site-footer{margin-top:45px;background:#143c2e;color:#fff}.footer-inner{max-width:1200px;margin:auto;padding:35px 20px;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:30px}.footer-logo{width:120px;background:#fff;border-radius:12px;padding:5px;margin-bottom:10px}.footer-title{font-size:17px;font-weight:bold;margin-bottom:12px}.footer-text{font-size:13px;line-height:2.1;color:#dcebe5}.copyright{text-align:center;border-top:1px solid rgba(255,255,255,.12);padding:15px;color:#c9ddd5;font-size:12px}@media(max-width:800px){.header-inner{flex-direction:column}.form-grid{grid-template-columns:1fr}.field.full,.submit-btn{grid-column:auto}.footer-inner{grid-template-columns:1fr;text-align:center}.footer-logo{margin-left:auto;margin-right:auto}}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="header-inner"><a id="homeLink" href="./index.html"><img class="logo" src="./static/images/sabalan_shop_logo.png" alt="سبلان شاپ"></a><nav class="nav"><a id="navHome" href="./index.html">صفحه اصلی</a><a id="productsLink" href="./products.html">محصولات</a><a href="#">پیگیری سفارش</a><a href="#">قوانین و شرایط</a><a href="#">تماس با ما</a></nav></div></header>
+<main class="container"><section class="order-box"><h1>ثبت سفارش</h1><p class="subtitle">اطلاعات خود را وارد کنید تا سفارش شما ثبت شود.</p><div id="selectedProduct" class="selected-product"></div><a id="productsLink2" class="products-link" href="./products.html">مشاهده سایر محصولات</a>
+<form id="orderForm"><div class="form-grid"><div class="field"><label for="product">محصول</label><select id="product" required><option value="">انتخاب محصول</option><option value="P-001">P-001 | محصول پوشاک | ۵۹۹,۰۰۰ تومان</option><option value="P-002">P-002 | محصول کفش | ۷۹۹,۰۰۰ تومان</option><option value="P-003">P-003 | اکسسوری و زیورآلات | ۴۹۹,۰۰۰ تومان</option><option value="P-004">P-004 | عطر و ادکلن | ۸۹۹,۰۰۰ تومان</option></select></div><div class="field"><label for="quantity">تعداد</label><input id="quantity" type="number" min="1" value="1" required></div><div class="field"><label for="fullname">نام و نام خانوادگی</label><input id="fullname" type="text" required></div><div class="field"><label for="phone">شماره موبایل</label><input id="phone" type="tel" required></div><div class="field"><label for="province">استان</label><input id="province" type="text" required></div><div class="field"><label for="city">شهر</label><input id="city" type="text" required></div><div class="field full"><label for="address">آدرس کامل</label><textarea id="address" required></textarea></div><button class="submit-btn" type="submit">ثبت سفارش</button></div></form><div id="orderMessage"></div><div class="notice">🚚 ارسال رایگان فقط در محدوده شهر تبریز<br>📦 ارسال به سایر نقاط کشور با احتساب هزینه پستی<br>🏠 پرداخت درب منزل پس از رویت و تحویل کالا<br>🔄 درخواست تعویض یا مرجوعی تا ۱ روز پس از تحویل</div></section></main>
+<footer class="site-footer"><div class="footer-inner"><div><img class="footer-logo" src="./static/images/sabalan_shop_logo.png" alt="سبلان شاپ"><div class="footer-text">سبلان شاپ | از دل آذربایجان تا خانه شما</div></div><div><div class="footer-title">خدمات</div><div class="footer-text">پرداخت درب منزل<br>ارسال مطمئن<br>بررسی کالا هنگام تحویل</div></div><div><div class="footer-title">ارسال و پشتیبانی</div><div class="footer-text">ارسال رایگان فقط در محدوده شهر تبریز<br>ارسال به سایر نقاط کشور با احتساب هزینه پستی<br>پشتیبانی و پاسخگویی به مشتریان</div></div></div><div class="copyright">© سبلان شاپ - تمامی حقوق محفوظ است.</div></footer>
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+ const params=new URLSearchParams(location.search);
+ const productCode=(params.get("product")||"").trim().toUpperCase();
+ const ref=params.get("customer_ref")||localStorage.getItem("sabalan_customer_ref")||"";
+ if(ref) localStorage.setItem("sabalan_customer_ref",ref);
+ const productSelect=document.getElementById("product");
+ const selected=document.getElementById("selectedProduct");
+ if(productSelect&&productCode){
+   let found=false;
+   for(const o of productSelect.options){if(o.value.trim().toUpperCase()===productCode){productSelect.value=o.value;found=true;break;}}
+   if(found){selected.style.display="block";selected.innerHTML="🛒 محصول انتخاب‌شده از سبلان شاپ: <strong>"+productCode+"</strong><br>این محصول از مسیر روبیکا برای شما انتخاب شده است.";}
+ }
+ const addContext=function(u){
+   const x=new URL(u,location.href);
+   if(ref)x.searchParams.set("customer_ref",ref);
+   if(productCode && (x.pathname.endsWith("index.html") || x.pathname.endsWith("order.html")))x.searchParams.set("product",productCode);
+   return x.pathname.split('/').pop()+(x.search?'?'+x.searchParams.toString():'');
+ };
+ for(const id of ["homeLink","navHome","productsLink","productsLink2"]){const a=document.getElementById(id);if(a)a.href=addContext(a.getAttribute("href"));}
+ const form=document.getElementById("orderForm"), msg=document.getElementById("orderMessage");
+ form.addEventListener("submit",async function(e){
+   e.preventDefault();msg.style.display="block";msg.innerHTML="⏳ در حال ثبت سفارش...";
+   const data={product:productSelect.value,quantity:document.getElementById("quantity").value,fullname:document.getElementById("fullname").value,phone:document.getElementById("phone").value,province:document.getElementById("province").value,city:document.getElementById("city").value,address:document.getElementById("address").value,customer_ref:ref};
+   try{
+     const r=await fetch("http://127.0.0.1:8000/api/orders",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)});
+     const result=await r.json();
+     if(result.success){msg.innerHTML="<strong>✅ سفارش با موفقیت ثبت شد.</strong><br><br>شماره سفارش: <strong>#"+result.order_id+"</strong><br>وضعیت سفارش: "+result.status+"<br><br>شناسه مشتری روبیکا همراه سفارش ذخیره شد.";}
+     else msg.innerHTML="❌ "+result.message;
+   }catch(err){msg.innerHTML="❌ اتصال به سامانه ثبت سفارش برقرار نشد.<br>لطفاً سرور سبلان شاپ را اجرا کنید.";}
+ });
+});
+</script>
+</body>
+</html>
